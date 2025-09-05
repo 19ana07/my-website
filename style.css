@@ -1,0 +1,99 @@
+body {
+  background-color: #5f9ea0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.cake {
+  width: 300px;
+  height: 200px;
+  font-size: 24px;
+  border: 2px solid #ffefd5;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #d2691e;
+  gap: 40px;
+}
+.candel {
+  width: 20px;
+  height: 60px;
+  background-color: #eee8aa;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000000;
+  position: relative;
+  border-radius: 1px;
+}
+.flame {
+  width: 10px;
+  height: 50px;
+  background: radial-gradient(circle at 30% 30%, yellow, orange, red);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: flicker 0.2s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes flicker {
+  from {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2) translateY(-2px);
+    opacity: 0.8;
+  }
+}
+
+.fill {
+  width: 300px;
+  height: 20px;
+  background-color: #ffefd5;
+  border-radius: 5px;
+}
+
+.message {
+  background-color: #1b6063;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #ffefd5;
+}
+.kraj {
+  margin-top: 150;
+  background-color: #1b6063;
+  color: #ffefd5;
+}
+
+.hidden {
+  display: none;
+}
+
+#surprise {
+  width: 50%;
+  height: 450px;
+  margin-top: 20px;
+  padding: 20px;
+  background: #ffefd5;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  position: fixed; /* stays in place even when scrolling */
+  top: 50%; /* push it halfway down */
+  left: 50%; /* push it halfway across */
+  transform: translate(-50%, -50%);
+  color: #366e70;
+}
